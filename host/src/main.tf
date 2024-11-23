@@ -32,7 +32,7 @@ module "lambda_function" {
 
   function_name = "minimalApiDotnet"
   description   = "AWS Lambda API function for training purposes using the 'serverless.AspNetCoreMinimalAPI' template."
-  handler       = "minimalApiDotnet.Function::minimalApiDotnet.Function.LambdaEntryPoint::FunctionHandlerAsync"
+  handler       = "minimalApiDotnet.Function"
   runtime       = "dotnet8"
   create_role   = false
   #lambda_role  = aws_iam_role.lambda_role.arn
@@ -42,7 +42,7 @@ module "lambda_function" {
   architectures = ["arm64"]
 
   environment_variables = {
-    ENV = "dev"
+    ENV = "Production"
   }
 
   tags = {
