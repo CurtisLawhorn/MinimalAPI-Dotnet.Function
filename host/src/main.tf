@@ -31,7 +31,7 @@ module "lambda_function" {
   source = "terraform-aws-modules/lambda/aws"
 
   function_name = "minimalApiDotnet"
-  description   = "AWS Lambda API function for training purposes using the 'serverless.AspNetCoreMinimalAPI' template."
+  description   = "API function for training purposes using the 'serverless.AspNetCoreMinimalAPI' template."
   handler       = "minimalApiDotnet.Function"
   runtime       = "dotnet8"
   create_role   = false
