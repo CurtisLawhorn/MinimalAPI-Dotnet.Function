@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace minimalApiDotnet.Function.Controllers;
+namespace MinimalAPI_Dotnet.Function.Controllers;
 
 [ApiController]
 [Route("[controller]")]

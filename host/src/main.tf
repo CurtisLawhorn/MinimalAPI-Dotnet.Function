@@ -30,9 +30,9 @@ data "aws_iam_role" "existing_lambda_role" {
 module "lambda_function" {
   source = "terraform-aws-modules/lambda/aws"
 
-  function_name = "minimalApiDotnet"
+  function_name = "MinimalAPI-Dotnet"
   description   = "API function for training purposes using the 'serverless.AspNetCoreMinimalAPI' template."
-  handler       = "minimalApiDotnet.Function"
+  handler       = "MinimalAPI-Dotnet.Function"
   runtime       = "dotnet8"
   create_role   = false
   #lambda_role  = aws_iam_role.lambda_role.arn
@@ -46,9 +46,9 @@ module "lambda_function" {
   }
 
   tags = {
-    Name        = "minimalApiDotnet.Function"
+    Name        = "MinimalAPI-Dotnet.Function"
     Environment = "Sandbox"
-    Repository  = "https://github.com/CurtisLawhorn/minimalApiDotnet.Function"
+    Repository  = "https://github.com/CurtisLawhorn/MinimalAPI-Dotnet.Function.git"
   }
 
   source_path = [{

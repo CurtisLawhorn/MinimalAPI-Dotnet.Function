@@ -8,7 +8,7 @@
   "profile": "",
   "region": "",
   "configuration": "Release",
-  "s3-prefix": "minimalApiDotnet.Function/",
+  "s3-prefix": "MinimalAPI-Dotnet.Function/",
   "template": "serverless.template",
   "template-parameters": ""
 }
